@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+  font-size: 16px;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.text-container {
+  padding: 7%;
+  text-align: center;
+}
+.title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.subtitle {
+  color: #8a8a8a;
+  margin-bottom: 25px;
+}
+
+.plan-container {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  display: flex;
+  padding: 25px;
+  allign-items: center;
+  justify-content: space-between;
+}
+.plan-box {
+  display: flex;
+  allign-items: center;
+  text-align: left;
+}
+.price-box {
+  margin-left: 20px;
+}
+.price-box h5 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.price-box p {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+.plan-container a {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.plan-container a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+  transition: color 0.3s ease;
+}
+.proceed-btn {
+  display: block;
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 20px 0;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+.proceed-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+  transition: background-color 0.3s ease;
+}
+.cancel-btn {
+  display: block;
+  text-decoration: none;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  background-color: white;
+  padding: 20px 0;
+  margin: 30px 0;
+}
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+  transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 425px) {
+  .body {
+    background-image: url(images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .container {
+    max-width: 87%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .plan-container {
+    padding: 12px;
+  }
+  .plan-box {
+    margin-left: 10px;
+  }
+  .proceed-btn,
+  .cancel-btn,
+  .plan-container a {
+    font-size: 12px;
+  }
+  .text-container {
+    padding: 9% 7%;
+  }
+}
