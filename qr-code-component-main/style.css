@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #D5E1EF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    box-sizing: border-box;
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 24px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img{
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 0 16px;
+}
+.text-container h1{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #1F314F;
+}
+.text-container p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #68778D;
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        width: 80%;
+        height: auto;
+    }
+    .image-container img {
+        width: 90%;
+        height: auto;
+    }
+}
