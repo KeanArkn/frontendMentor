@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    border-radius: 12px;
+    padding: 40px;
+    gap: 24px;
+    width: 384px;
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    align-items: center;
+}
+
+.name-container h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.name-container p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #C4F82A;
+}
+
+.bio-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-container p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #333333;
+}
+
+.link p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.link:hover {
+    transition: 0.2s ease;
+    background-color: #C4F82A;
+    cursor: pointer;
+}
+
+.link:hover p {
+    transition: 0.2s ease;
+    color: #333333;
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        padding: 24px;
+        width: 327px;
+    }
+}
