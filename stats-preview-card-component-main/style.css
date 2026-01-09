@@ -41,7 +41,7 @@ p {
 }
 
 .image-container .overlay {
-    opacity: 0.35;
+    mix-blend-mode: multiply;
     background-color: #AB5CDB;
     position: absolute;
     top: 0;
