@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E0E8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 437px;
+}
+
+.background img {
+    src: url("./images/pattern-background-desktop.svg");
+    height: 100%;
+    width: 100%;
+}
+
+h1,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.image-container {
+    width: 100%;
+    height: 220px;
+    background-image: url("./images/illustration-hero.svg");
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary h1 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 135%;
+    letter-spacing: 0px;
+    color: #1F2E55;
+}
+
+.summary p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 165%;
+    letter-spacing: 0.5px;
+    color: #717FA6;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 24px;
+    background-color: #F7F9FF;
+    border-radius: 11px;
+}
+
+.music {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D6E1FF;
+    border-radius: 50%;
+}
+
+.icon-container img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.plan h1 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 165%;
+    letter-spacing: 0px;
+    color: #1F2E55;
+}
+
+.plan p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 165%;
+    letter-spacing: 0px;
+    color: #717FA6;
+}
+
+.change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 165%;
+    letter-spacing: 0px;
+    color: #382AE1;
+}
+
+.change a:hover {
+    color: #766CF1;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.cta .btn {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 165%;
+    letter-spacing: 0px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px 20px 0px #382ae130;
+    background-color: #382AE1;
+    height: 50px;
+    width: 100%;
+
+}
+
+.cta .btn:hover {
+    background-color: #766CF1;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cta a {
+    text-align: center;
+    text-decoration: none;
+    color: #717FA6;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 165%;
+    letter-spacing: 0px;
+}
+
+.cta a:hover {
+    color: #1F2E55;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 327px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 160px;
+        background-size: cover;
+    }
+
+    .text-container {
+        padding: 32px;
+    }
+
+    .text {
+        gap: 24px;
+    }
+
+    .summary h1 {
+        font-size: 22px;
+    }
+
+    .summary p {
+        font-size: 15px;
+    }
+
+    .plan-container {
+        padding: 16px;
+    }
+
+    .plan h1 {
+        font-size: 15px;
+    }
+
+    .plan p {
+        font-size: 15px;
+    }
+
+    .change a {
+        font-size: 15px;
+    }
+
+    .cta {
+        gap: 24px;
+    }
+
+    .cta .btn {
+        font-size: 15px;
+    }
+
+    .cta a {
+        font-size: 15px;
+    }
+}
